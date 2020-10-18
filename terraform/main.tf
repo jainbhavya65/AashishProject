@@ -23,7 +23,7 @@ resource "docker_container" "db" {
 # create wordpress container
 resource "docker_container" "web" {
   name  = "web"
-  image = "test:v1"
+  image = "aashishdockerid/aashishproject"
   restart = "always"
   ports {
     external = 8081
